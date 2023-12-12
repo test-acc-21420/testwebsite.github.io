@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html
+ 
+lang="en">
+
+<head>
+
+  
+<meta
+ 
+charset="UTF-8">
+
+  
+<meta
+ 
+name="viewport"
+ 
+content="width=device-width, initial-scale=1.0">
+
+  
+<title>Login and Registration</title>
+
+  
+<link
+ 
+rel="stylesheet"
+ 
+href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome</h1>
+    <p>Please log in or register to continue.</p>
+    <div class="login-register">
+      <div class="login">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label
+ 
+for="email">Email:</label>
+
+          
+<input
+ 
+type="email"
+ 
+id="email"
+ 
+name="email"
+ 
+required>
+
+          
+<label
+ 
+for="password">Password:</label>
+
+          
+<input
+ 
+type="password"
+ 
+id="password"
+ 
+name="password"
+ 
+required>
+
+          
+<button
+ 
+type="submit">Login</button>
+
+        
+</form>
+      </div>
+      <div class="register">
+        <h2>Register</h2>
+        <form id="register-form">
+
+          
+<label
+ 
+for="username">Username:</label>
+
+          
+<input
+ 
+type="text"
+ 
+id="username"
+ 
+name="username"
+ 
+required>
+
+          
+<label
+ 
+for="email">Email:</label>
+
+          
+<input
+ 
+type="email"
+ 
+id="email"
+ 
+name="email"
+ 
+required>
+
+          
+<label
+ 
+for="password">Password:</label>
+
+          
+<input
+ 
+type="password"
+ 
+id="password"
+ 
+name="password"
+ 
+required>
+
+          
+<button
+ 
+type="submit">Register</button>
+
+        
+</form>
+
+      
+</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+Use code with caution. Learn more
+style.css:
+
+CSS
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.login-register {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login,
+.register {
+  flex: 1;
+  padding: 20px;
+}
+
+form {
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+}
+Use code with caution. Learn more
+script.js:
+
+JavaScript
+const loginForm = document.getElementById('login-form');
+const registerForm = document.getElementById('register-form');
+
+loginForm.addEventListener('submit',
+ 
+(event) => {
+  event.preventDefault();
+
+  // Validate login form
+  // ...
+
+  // Send login request to server
+  // ...
+
+  // Handle successful login
+  // ...
+});
